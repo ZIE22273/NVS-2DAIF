@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fragen.js" defer></script>
+    <title>Quiz</title>
+    <style>
+        /* CSS, um das Input-Feld auf volle Breite zu setzen */
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box; /* Beachte auch die Padding und Border innerhalb der Breite */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Quiz</h1>
+    </div>
+    <div>
+        <input type="text" id="frage" readonly><br><br>
+        <input type="radio" name="antwort" id="option1"><label for="option1" id="label1"></label><br>
+        <input type="radio" name="antwort" id="option2"><label for="option2" id="label2"></label><br>
+        <input type="radio" name="antwort" id="option3"><label for="option3" id="label3"></label><br>
+        <input type="radio" name="antwort" id="option4"><label for="option4" id="label4"></label><br><br>
+        <input type="button" value="senden" onclick="zeigeNaechsteFrage()">
+    </div>
+</body>
+</html>
