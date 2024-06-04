@@ -10,13 +10,33 @@
             width: 100%;
             box-sizing: border-box;
         }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        body {
+            background-color: lightblue;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .quiz {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            flex: none;
+        }
     </style>
 </head>
 <body>
     <div>
-        <h1>Quiz</h1>
+        <h1>JavaScript Quiz - NVS </h1>
     </div>
-    <div>
+    <div class="quiz">
         <input type="text" id="frage" readonly><br><br>
         <input type="radio" name="antwort" id="option1"><label for="option1" id="label1"></label><br>
         <input type="radio" name="antwort" id="option2"><label for="option2" id="label2"></label><br>
