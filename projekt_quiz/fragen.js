@@ -116,7 +116,6 @@ function zeigeFrage(index) {
     option3Element.textContent = fragen[index].optionen[2];
     option4Element.textContent = fragen[index].optionen[3];
 
-    // Ensure the radio buttons are properly assigned the same name attribute
     const option1Radio = document.getElementById("option1");
     const option2Radio = document.getElementById("option2");
     const option3Radio = document.getElementById("option3");
@@ -137,7 +136,6 @@ function zeigeNaechsteFrage() {
     }
 }
 
-// Initial the first question on load
 document.addEventListener("DOMContentLoaded", function() {
     zeigeNaechsteFrage();
 });
