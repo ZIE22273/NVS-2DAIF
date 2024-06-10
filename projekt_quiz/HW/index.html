@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fragen.js" defer></script>
+    <title>Quiz</title>
+    <style>
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        body {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .quiz {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz">
+        <h1>JavaScript Quiz - NVS</h1>
+        <input type="text" id="frage" readonly><br><br>
+        <input type="radio" name="antwort" id="option1"><label for="option1" id="label1"></label><br>
+        <input type="radio" name="antwort" id="option2"><label for="option2" id="label2"></label><br>
+        <input type="radio" name="antwort" id="option3"><label for="option3" id="label3"></label><br>
+        <input type="radio" name="antwort" id="option4"><label for="option4" id="label4"></label><br><br>
+        <input type="button" value="Senden" onclick="handleNaechsteFrage()">
+    </div>
+</body>
+</html>
